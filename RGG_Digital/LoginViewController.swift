@@ -10,13 +10,28 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var registerButton: UIButton!
+    
     override func viewDidLoad() {
+        self.navigationController?.setNavigationBarHidden(true, animated: true) //Hide
         super.viewDidLoad()
-
+    
+       // view.layer.addSublayer(Utilities.VerticalGradientLayer)
+       // Utilities.VerticalGradientLayer.frame = view.bounds
+        setUpElements()
         // Do any additional setup after loading the view.
     }
     
-
+    func setUpElements(){
+        Utilities.styleHollowButton(loginButton)
+        Utilities.styledFilledButton(registerButton)
+      }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
     /*
     // MARK: - Navigation
 
@@ -26,5 +41,6 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+   
 
 }
