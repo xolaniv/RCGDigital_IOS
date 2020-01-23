@@ -10,6 +10,9 @@
 		32FAF881E0F08D1C1807576D /* Pods_RGG_DigitalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A68C4B61C8307DE93A353E /* Pods_RGG_DigitalTests.framework */; };
 		625B0BD6204FCF3163AB7ECC /* Pods_RGG_Digital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2539B1402EF5D8578534BBF1 /* Pods_RGG_Digital.framework */; };
 		CBE0742307C648C3DA2A6395 /* Pods_RGG_Digital_RGG_DigitalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61143BE94E0E27F99B6BABE /* Pods_RGG_Digital_RGG_DigitalUITests.framework */; };
+		CC42A26223D08529007DE8C1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC42A26123D08529007DE8C1 /* SignInViewController.swift */; };
+		CC42A26723D08FB2007DE8C1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC42A26623D08FB2007DE8C1 /* Utilities.swift */; };
+		CC960EA623D5B9BC0084754B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC960EA523D5B9BC0084754B /* Constants.swift */; };
 		CC984057236467AA00246233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC984056236467AA00246233 /* AppDelegate.swift */; };
 		CC984059236467AA00246233 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC984058236467AA00246233 /* SceneDelegate.swift */; };
 		CC98405B236467AA00246233 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC98405A236467AA00246233 /* HomeViewController.swift */; };
@@ -37,6 +40,7 @@
 		CC9840DB2364894D00246233 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9840DA2364894D00246233 /* DesignableView.swift */; };
 		CC9840DC2364894D00246233 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9840DA2364894D00246233 /* DesignableView.swift */; };
 		CC9840DD2364894D00246233 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9840DA2364894D00246233 /* DesignableView.swift */; };
+		CCBD043C23D889D000F20457 /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBD043B23D889D000F20457 /* HelperExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,9 @@
 		9AC87531A20142AD33D4F203 /* Pods-RGG_Digital-RGG_DigitalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGG_Digital-RGG_DigitalUITests.debug.xcconfig"; path = "Target Support Files/Pods-RGG_Digital-RGG_DigitalUITests/Pods-RGG_Digital-RGG_DigitalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3131B0561628832CCDCBCC7 /* Pods-RGG_Digital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGG_Digital.release.xcconfig"; path = "Target Support Files/Pods-RGG_Digital/Pods-RGG_Digital.release.xcconfig"; sourceTree = "<group>"; };
 		B61143BE94E0E27F99B6BABE /* Pods_RGG_Digital_RGG_DigitalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGG_Digital_RGG_DigitalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC42A26123D08529007DE8C1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CC42A26623D08FB2007DE8C1 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CC960EA523D5B9BC0084754B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CC984053236467AA00246233 /* RGG_Digital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGG_Digital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC984056236467AA00246233 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC984058236467AA00246233 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +92,7 @@
 		CC9840D2236470FE00246233 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CC9840D62364796100246233 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CC9840DA2364894D00246233 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		CCBD043B23D889D000F20457 /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
 		E6AA47FC5FB1D8FDFB0294DE /* Pods-RGG_DigitalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGG_DigitalTests.debug.xcconfig"; path = "Target Support Files/Pods-RGG_DigitalTests/Pods-RGG_DigitalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F17AF1809F61D269392D0F53 /* Pods-RGG_Digital-RGG_DigitalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGG_Digital-RGG_DigitalUITests.release.xcconfig"; path = "Target Support Files/Pods-RGG_Digital-RGG_DigitalUITests/Pods-RGG_Digital-RGG_DigitalUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +135,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CC42A26323D08F1D007DE8C1 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CC42A26623D08FB2007DE8C1 /* Utilities.swift */,
+				CC960EA523D5B9BC0084754B /* Constants.swift */,
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
 		CC98404A236467AA00246233 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +169,8 @@
 		CC984055236467AA00246233 /* RGG_Digital */ = {
 			isa = PBXGroup;
 			children = (
+				CCBD043B23D889D000F20457 /* HelperExtensions.swift */,
+				CC42A26323D08F1D007DE8C1 /* utilities */,
 				CC9840C623646B1700246233 /* GoogleService-Info.plist */,
 				CC984056236467AA00246233 /* AppDelegate.swift */,
 				CC984058236467AA00246233 /* SceneDelegate.swift */,
@@ -166,6 +185,7 @@
 				CC9840CE236470DC00246233 /* LoginViewController.swift */,
 				CC9840D2236470FE00246233 /* RegisterViewController.swift */,
 				CC9840D62364796100246233 /* SettingsViewController.swift */,
+				CC42A26123D08529007DE8C1 /* SignInViewController.swift */,
 			);
 			path = RGG_Digital;
 			sourceTree = "<group>";
@@ -445,13 +465,17 @@
 			files = (
 				CC9840CF236470DC00246233 /* LoginViewController.swift in Sources */,
 				CC98405D236467AA00246233 /* NotifcationsViewController.swift in Sources */,
+				CC42A26723D08FB2007DE8C1 /* Utilities.swift in Sources */,
 				CC9840D3236470FE00246233 /* RegisterViewController.swift in Sources */,
 				CC9840CB236470B200246233 /* MediaViewController.swift in Sources */,
 				CC98405B236467AA00246233 /* HomeViewController.swift in Sources */,
+				CCBD043C23D889D000F20457 /* HelperExtensions.swift in Sources */,
 				CC984057236467AA00246233 /* AppDelegate.swift in Sources */,
 				CC984059236467AA00246233 /* SceneDelegate.swift in Sources */,
 				CC9840D72364796100246233 /* SettingsViewController.swift in Sources */,
+				CC42A26223D08529007DE8C1 /* SignInViewController.swift in Sources */,
 				CC9840DB2364894D00246233 /* DesignableView.swift in Sources */,
+				CC960EA623D5B9BC0084754B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
