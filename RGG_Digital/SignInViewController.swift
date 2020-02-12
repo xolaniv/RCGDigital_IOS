@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignInViewController: UIViewController {
 
@@ -41,7 +42,46 @@ class SignInViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+    
     @IBAction func loginButtonTapped(_ sender: UIButton) {
+        
+        let email = emailAddresstxt.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let Password = passwordText.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        Auth.auth().signIn(withEmail: email!, password: Password!) { (res, error) in
+            if (error != nil)
+            {
+                if (Password == "" || email == "") {
+                    DispatchQueue.main.async {
+                        self.showErrorMessage("There is an empty field, please make sure they are all filled!")
+                    }
+                }
+                else {
+                DispatchQueue.main.async {
+                    self.showErrorMessage("Error Logging in \(String(describing: error?.localizedDescription))")
+                    }
+                }
+            }
+            else
+            {
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                }
+            }
+        }
     }
+    override func viewDidAppear(_ animated: Bool) {
+        if let user = Auth.auth().currentUser {
+            performSegue(withIdentifier: "loginSegue", sender: nil)
+        }
+    }
+    
+    func showErrorMessage(_ message: String)
+       {
+           let alertContoler = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+           let myAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+           alertContoler.addAction(myAction)
+           self.present(alertContoler,animated: true, completion: nil)
+       }
     
 }
